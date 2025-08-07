@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 
 const Header = () => {
@@ -9,44 +8,44 @@ const Header = () => {
 
   const serviceCategories = {
     'IRP Registration': [
-      { name: 'IRP NEW Registration', slug: 'irp-new-registration' },
-      { name: 'IRP Addition', slug: 'irp-addition' },
-      { name: 'IRP Transfer', slug: 'irp-transfer' },
-      { name: 'IRP Renewal', slug: 'irp-renewal' },
-      { name: 'IRP 45-Day Temporary Registration', slug: 'irp-45-day-temporary' },
-      { name: 'Trailer Registration & Title Transfer', slug: 'trailer-registration-title-transfer' },
-      { name: 'Truck Title Transfer', slug: 'truck-title-transfer' }
+      'IRP NEW Registration',
+      'IRP Addition',
+      'IRP Transfer',
+      'IRP Renewal',
+      'IRP 45-Day Temporary Registration',
+      'Trailer Registration & Title Transfer',
+      'Truck Title Transfer'
     ],
     'IFTA Filing': [
-      { name: 'IFTA Registration & Renewal', slug: 'ifta-registration-renewal' },
-      { name: 'IFTA Quarterly Tax Return Filings', slug: 'ifta-quarterly-filings' },
-      { name: 'KY, NM, NY Quarterly Filings', slug: 'ky-nm-ny-quarterly-filings' },
-      { name: 'CT Quarterly Filings', slug: 'ct-quarterly-filings' },
-      { name: 'OR Quarterly Filings', slug: 'or-quarterly-filings' }
+      'IFTA Registration & Renewal',
+      'IFTA Quarterly Tax Return Filings',
+      'KY, NM, NY Quarterly Filings',
+      'CT Quarterly Filings',
+      'OR Quarterly Filings'
     ],
     'Company Formation': [
-      { name: 'Corporations', slug: 'corporations' },
-      { name: 'LLC Formation', slug: 'llc-formation' },
-      { name: 'EIN Registration', slug: 'ein-registration' },
-      { name: 'Motor Carrier Authority', slug: 'motor-carrier-authority' },
-      { name: 'DOT Number Registration', slug: 'dot-number-registration' },
-      { name: 'Broker Authority', slug: 'broker-authority' },
-      { name: 'Illinois Intrastate Authority', slug: 'illinois-intrastate-authority' }
+      'Corporations',
+      'LLC Formation',
+      'EIN Registration',
+      'Motor Carrier Authority',
+      'DOT Number Registration',
+      'Broker Authority',
+      'Illinois Intrastate Authority'
     ],
     'Tax Filing': [
-      { name: 'HWY Use Taxes (Form 2290)', slug: 'hwy-use-taxes-2290' },
-      { name: 'BOC-3 Filing', slug: 'boc-3-filing' },
-      { name: 'UCR Registration Filing', slug: 'ucr-registration' },
-      { name: 'Payroll', slug: 'payroll' }
+      'HWY Use Taxes (Form 2290)',
+      'BOC-3 Filing',
+      'UCR Registration Filing',
+      'Payroll'
     ],
     'Training': [
-      { name: 'CDL English Proficiency Training', slug: 'cdl-english-training' }
+      'CDL English Proficiency Training'
     ],
     'Miscellaneous': [
-      { name: 'IRP, IFTA, DOT Audits', slug: 'irp-ifta-dot-audits' },
-      { name: 'SCAC Registration', slug: 'scac-registration' },
-      { name: 'Bookkeeping', slug: 'bookkeeping' },
-      { name: 'Notary Public', slug: 'notary-public' }
+      'IRP, IFTA, DOT Audits',
+      'SCAC Registration',
+      'Bookkeeping',
+      'Notary Public'
     ]
   };
 
@@ -78,7 +77,6 @@ const Header = () => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <div className="flex items-center">
-              <Link to="/" className="flex items-center">
               <img 
                 src="/logo.png" 
                 alt="DegyUS Consulting" 
@@ -97,12 +95,11 @@ const Header = () => {
                 <h1 className="text-xl font-bold text-gray-900">DegyUS Consulting</h1>
                 {/* <p className="text-sm text-gray-600">Professional Trucking Services</p> */}
               </div>
-              </Link>
             </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex space-x-8">
-              <Link to="/" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</Link>
+              <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
               
               {/* Services Dropdown */}
               <div className="relative group">
@@ -130,12 +127,12 @@ const Header = () => {
                         <ul className="space-y-1">
                           {services.map((service, index) => (
                             <li key={index}>
-                              <Link 
-                                to={`/services/${service.slug}`}
+                              <a 
+                                href="#services" 
                                 className="block text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-colors"
                               >
-                                {service.name}
-                              </Link>
+                                {service}
+                              </a>
                             </li>
                           ))}
                         </ul>
@@ -145,9 +142,9 @@ const Header = () => {
                 </div>
               </div>
               
-              <Link to="/#trucking-insights" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Trucking Insights</Link>
-              <Link to="/#about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">About Us</Link>
-              <Link to="/#contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact Us</Link>
+              <a href="#trucking-insights" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Trucking Insights</a>
+              <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">About Us</a>
+              <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact Us</a>
               {/* <a href="#consultation" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">Free Consultation</a> */}
             </nav>
 
@@ -164,7 +161,7 @@ const Header = () => {
           {isMenuOpen && (
             <div className="lg:hidden py-4 border-t max-h-96 overflow-y-auto">
               <nav className="flex flex-col space-y-4">
-                <Link to="/" className="text-gray-700 hover:text-blue-600 font-medium">Home</Link>
+                <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium">Home</a>
                 
                 {/* Mobile Services Dropdown */}
                 <div>
@@ -184,16 +181,16 @@ const Header = () => {
                           <ul className="space-y-1 ml-2">
                             {services.map((service, index) => (
                               <li key={index}>
-                                <Link 
-                                  to={`/services/${service.slug}`}
+                                <a 
+                                  href="#services" 
                                   className="block text-sm text-gray-600 hover:text-blue-600 py-1"
                                   onClick={() => {
                                     setIsMenuOpen(false);
                                     setIsMobileServicesOpen(false);
                                   }}
                                 >
-                                  {service.name}
-                                </Link>
+                                  {service}
+                                </a>
                               </li>
                             ))}
                           </ul>
@@ -203,9 +200,9 @@ const Header = () => {
                   )}
                 </div>
                 
-                <Link to="/#trucking-insights" className="text-gray-700 hover:text-blue-600 font-medium">Trucking Insights</Link>
-                <Link to="/#about" className="text-gray-700 hover:text-blue-600 font-medium">About Us</Link>
-                <Link to="/#contact" className="text-gray-700 hover:text-blue-600 font-medium">Contact Us</Link>
+                <a href="#trucking-insights" className="text-gray-700 hover:text-blue-600 font-medium">Trucking Insights</a>
+                <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium">About Us</a>
+                <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium">Contact Us</a>
                 {/* <a href="#consultation" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors inline-block text-center">Free Consultation</a> */}
               </nav>
             </div>
