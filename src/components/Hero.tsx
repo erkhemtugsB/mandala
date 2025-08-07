@@ -40,7 +40,7 @@ const Hero = () => {
               </a>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div className="flex items-center space-x-3">
                 <CheckCircle className="w-6 h-6 text-yellow-400 flex-shrink-0" />
                 <span className="text-sm">DOT Registration</span>
@@ -53,7 +53,7 @@ const Hero = () => {
                 <CheckCircle className="w-6 h-6 text-yellow-400 flex-shrink-0" />
                 <span className="text-sm">IRP Registration</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* <div className="relative">
