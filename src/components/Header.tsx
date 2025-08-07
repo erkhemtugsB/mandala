@@ -165,7 +165,7 @@ const Header = () => {
                 <a href="#trucking-insights" className="text-gray-700 hover:text-blue-600 font-medium">Trucking Insights</a>
                 <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium">About Us</a>
                 <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium">Contact Us</a>
-                <a href="#consultation" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors inline-block text-center">Free Consultation</a>
+                {/* <a href="#consultation" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors inline-block text-center">Free Consultation</a> */}
               </nav>
             </div>
           )}
