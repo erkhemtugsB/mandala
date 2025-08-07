@@ -4,6 +4,7 @@ import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   const serviceCategories = {
     'IRP Registration': [
@@ -161,7 +162,44 @@ const Header = () => {
             <div className="lg:hidden py-4 border-t">
               <nav className="flex flex-col space-y-4">
                 <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-                <a href="#services" className="text-gray-700 hover:text-blue-600 font-medium">Services</a>
+                
+                {/* Mobile Services Dropdown */}
+                <div>
+                  <button 
+                    className="flex items-center justify-between w-full text-gray-700 hover:text-blue-600 font-medium"
+                    onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                  >
+                    <span>Services</span>
+                    <ChevronDown className={`w-4 h-4 transition-transform ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  
+                  {isMobileServicesOpen && (
+                    <div className="mt-2 ml-4 space-y-3">
+                      {Object.entries(serviceCategories).map(([category, services]) => (
+                        <div key={category}>
+                          <h4 className="font-semibold text-blue-600 mb-1 text-sm">{category}</h4>
+                          <ul className="space-y-1 ml-2">
+                            {services.map((service, index) => (
+                              <li key={index}>
+                                <a 
+                                  href="#services" 
+                                  className="block text-sm text-gray-600 hover:text-blue-600 py-1"
+                                  onClick={() => {
+                                    setIsMenuOpen(false);
+                                    setIsMobileServicesOpen(false);
+                                  }}
+                                >
+                                  {service}
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                
                 <a href="#trucking-insights" className="text-gray-700 hover:text-blue-600 font-medium">Trucking Insights</a>
                 <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium">About Us</a>
                 <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium">Contact Us</a>
