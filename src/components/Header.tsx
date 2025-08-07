@@ -52,7 +52,7 @@ const Header = () => {
     <>
       {/* Top Contact Bar */}
       <div className="bg-blue-900 text-white py-2 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
+        {/* <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
           <div className="flex items-center space-x-4 mb-2 sm:mb-0">
             <div className="flex items-center space-x-1">
               <Phone className="w-4 h-4" />
@@ -67,7 +67,7 @@ const Header = () => {
             <Mail className="w-4 h-4" />
             <span>degyusconsulting@gmail.com</span>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Main Header */}
@@ -77,7 +77,7 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="/public/logo.png" 
+                src="/logo.png" 
                 alt="DegyUS Consulting" 
                 className="h-12 w-auto mr-3"
                 onError={(e) => {
@@ -92,7 +92,7 @@ const Header = () => {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">DegyUS Consulting</h1>
-                <p className="text-sm text-gray-600">Professional Trucking Services</p>
+                {/* <p className="text-sm text-gray-600">Professional Trucking Services</p> */}
               </div>
             </div>
 

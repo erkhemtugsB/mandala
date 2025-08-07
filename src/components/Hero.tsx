@@ -56,7 +56,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative">
+          {/* <div className="relative">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <div className="text-center mb-6">
                 <Truck className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
@@ -77,7 +77,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
