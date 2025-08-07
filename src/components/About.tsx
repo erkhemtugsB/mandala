@@ -92,12 +92,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h3>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             To provide comprehensive, reliable, and professional trucking consulting services that empower our clients to focus on what they do best – running their trucking operations – while we handle the complex regulatory and administrative requirements.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

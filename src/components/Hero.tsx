@@ -7,7 +7,7 @@ const Hero = () => {
       id="home" 
       className="relative text-white py-20 min-h-screen flex items-center"
       style={{
-        backgroundImage: 'linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.8)), url(https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg)',
+        backgroundImage: 'linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 59, 138, 0.27)), url(https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'

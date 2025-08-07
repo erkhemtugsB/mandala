@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Truck } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,16 +9,22 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
-                <Truck className="w-8 h-8 text-white" />
-              </div>
+                <img
+                  src="/logo.png"
+                  alt="DegyUS Consulting"
+                  className="h-12 w-auto mr-3"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.nextElementSibling!.style.display = 'block';
+                  }}
+                />
               <div>
                 <h3 className="text-2xl font-bold">DegyUS Consulting</h3>
-                <p className="text-gray-400">Professional Trucking Services</p>
+                {/* <p className="text-gray-400">Professional Trucking Services</p> */}
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Your trusted partner in trucking business success. We provide comprehensive consulting services 
+              Your trusted partner in trucking business success. We provide comprehensive consulting services
               to help your trucking company navigate licensing, compliance, and operational challenges with confidence.
             </p>
             <div className="space-y-3">
@@ -69,13 +75,13 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 DegyUS Consulting Inc. All rights reserved.
+              © 2025 DegyUS Consulting Inc. All rights reserved.
             </p>
-            <div className="flex space-x-6 text-sm">
+            {/* <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Disclaimer</a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

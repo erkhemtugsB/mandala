@@ -16,8 +16,8 @@ function App() {
       <Services />
       <TruckingInsights />
       <About />
-      <Contact />
-      <Consultation />
+      {/* <Contact /> */}
+      {/* <Consultation /> */}
       <Footer />
     </div>
   );
