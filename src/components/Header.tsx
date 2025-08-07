@@ -159,7 +159,7 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="lg:hidden py-4 border-t">
+            <div className="lg:hidden py-4 border-t max-h-96 overflow-y-auto">
               <nav className="flex flex-col space-y-4">
                 <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium">Home</a>
                 
@@ -174,7 +174,7 @@ const Header = () => {
                   </button>
                   
                   {isMobileServicesOpen && (
-                    <div className="mt-2 ml-4 space-y-3">
+                    <div className="mt-2 ml-4 space-y-3 max-h-64 overflow-y-auto">
                       {Object.entries(serviceCategories).map(([category, services]) => (
                         <div key={category}>
                           <h4 className="font-semibold text-blue-600 mb-1 text-sm">{category}</h4>
