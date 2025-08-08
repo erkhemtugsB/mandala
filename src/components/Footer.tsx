@@ -15,7 +15,6 @@ const Footer = () => {
                   className="h-12 w-auto mr-3"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling!.style.display = 'block';
                   }}
                 />
               <div>

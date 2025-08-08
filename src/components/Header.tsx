@@ -1,53 +1,56 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
-  const serviceCategories = {
+  const serviceCategories: Record<string, { label: string; path: string }[]> = {
     'IRP Registration': [
-      'IRP NEW Registration',
-      'IRP Addition',
-      'IRP Transfer',
-      'IRP Renewal',
-      'IRP 45-Day Temporary Registration',
-      'Trailer Registration & Title Transfer',
-      'Truck Title Transfer'
+      { label: 'IRP NEW Registration', path: '/irp-new-registration' },
+      { label: 'IRP Addition', path: '/irp-addition' },
+      { label: 'IRP Transfer', path: '/irp-transfer' },
+      { label: 'IRP Renewal', path: '/irp-renewal' },
+      { label: 'IRP 45-Day Temporary Registration', path: '/irp-temp-registration' },
+      { label: 'Trailer Registration & Title Transfer', path: '/trailer-registration' },
+      { label: 'Truck Title Transfer', path: '/truck-title-transfer' },
     ],
     'IFTA Filing': [
-      'IFTA Registration & Renewal',
-      'IFTA Quarterly Tax Return Filings',
-      'KY, NM, NY Quarterly Filings',
-      'CT Quarterly Filings',
-      'OR Quarterly Filings'
+      { label: 'IFTA Registration & Renewal', path: '/ifta-registration' },
+      { label: 'IFTA Quarterly Tax Return Filings', path: '/ifta-quarterly' },
+      { label: 'KY, NM, NY Quarterly Filings', path: '/state-quarterly-ky-nm-ny' },
+      { label: 'CT Quarterly Filings', path: '/ct-quarterly' },
+      { label: 'OR Quarterly Filings', path: '/or-quarterly' },
     ],
     'Company Formation': [
-      'Corporations',
-      'LLC Formation',
-      'EIN Registration',
-      'Motor Carrier Authority',
-      'DOT Number Registration',
-      'Broker Authority',
-      'Illinois Intrastate Authority'
+      { label: 'Corporations', path: '/corporations' },
+      { label: 'LLC Formation', path: '/llc-formation' },
+      { label: 'EIN Registration', path: '/ein-registration' },
+      { label: 'Motor Carrier Authority', path: '/motor-carrier-authority' },
+      { label: 'DOT Number Registration', path: '/dot-number-registration' },
+      { label: 'Broker Authority', path: '/broker-authority' },
+      { label: 'Illinois Intrastate Authority', path: '/illinois-intrastate-authority' },
     ],
     'Tax Filing': [
-      'HWY Use Taxes (Form 2290)',
-      'BOC-3 Filing',
-      'UCR Registration Filing',
-      'Payroll'
+      { label: 'HWY Use Taxes (Form 2290)', path: '/form-2290' },
+      { label: 'BOC-3 Filing', path: '/boc-3' },
+      { label: 'UCR Registration Filing', path: '/ucr-registration' },
+      { label: 'Payroll', path: '/payroll' },
     ],
     'Training': [
-      'CDL English Proficiency Training'
+      { label: 'CDL English Proficiency Training', path: '/cdl-english-training' },
     ],
     'Miscellaneous': [
-      'IRP, IFTA, DOT Audits',
-      'SCAC Registration',
-      'Bookkeeping',
-      'Notary Public'
-    ]
+      { label: 'IRP, IFTA, DOT Audits', path: '/audits' },
+      { label: 'SCAC Registration', path: '/scac-registration' },
+      { label: 'Bookkeeping', path: '/bookkeeping' },
+      { label: 'Notary Public', path: '/notary-public' },
+    ],
   };
+
+
 
   return (
     <>
@@ -77,13 +80,12 @@ const Header = () => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <div className="flex items-center">
-              <img 
-                src="/logo.png" 
-                alt="DegyUS Consulting" 
+              <img
+                src="/logo.png"
+                alt="DegyUS Consulting"
                 className="h-12 w-auto mr-3"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
-                  e.currentTarget.nextElementSibling!.style.display = 'block';
                 }}
               />
               <div className="hidden">
@@ -100,10 +102,10 @@ const Header = () => {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex space-x-8">
               <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-              
+
               {/* Services Dropdown */}
               <div className="relative group">
-                <button 
+                <button
                   className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 font-medium transition-colors"
                   onMouseEnter={() => setIsServicesOpen(true)}
                   onMouseLeave={() => setIsServicesOpen(false)}
@@ -111,12 +113,11 @@ const Header = () => {
                   <span>Services</span>
                   <ChevronDown className="w-4 h-4" />
                 </button>
-                
+
                 {/* Dropdown Menu */}
-                <div 
-                  className={`absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-50 transition-all duration-200 ${
-                    isServicesOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-                  }`}
+                <div
+                  className={`absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-50 transition-all duration-200 ${isServicesOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+                    }`}
                   onMouseEnter={() => setIsServicesOpen(true)}
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
@@ -127,12 +128,12 @@ const Header = () => {
                         <ul className="space-y-1">
                           {services.map((service, index) => (
                             <li key={index}>
-                              <a 
-                                href="#services" 
-                                className="block text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-colors"
+                              <Link
+                                to={service.path}
+                                className="block text-sm text-gray-800 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300"
                               >
-                                {service}
-                              </a>
+                                {service.label}
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -141,7 +142,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              
+
               <a href="#trucking-insights" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Trucking Insights</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">About Us</a>
               <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact Us</a>
@@ -162,17 +163,17 @@ const Header = () => {
             <div className="lg:hidden py-4 border-t max-h-96 overflow-y-auto">
               <nav className="flex flex-col space-y-4">
                 <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-                
+
                 {/* Mobile Services Dropdown */}
                 <div>
-                  <button 
+                  <button
                     className="flex items-center justify-between w-full text-gray-700 hover:text-blue-600 font-medium"
                     onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                   >
                     <span>Services</span>
                     <ChevronDown className={`w-4 h-4 transition-transform ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
                   </button>
-                  
+
                   {isMobileServicesOpen && (
                     <div className="mt-2 ml-4 space-y-3 max-h-64 overflow-y-auto">
                       {Object.entries(serviceCategories).map(([category, services]) => (
@@ -181,16 +182,16 @@ const Header = () => {
                           <ul className="space-y-1 ml-2">
                             {services.map((service, index) => (
                               <li key={index}>
-                                <a 
-                                  href="#services" 
-                                  className="block text-sm text-gray-600 hover:text-blue-600 py-1"
+                                <Link
+                                  to={service.path}
+                                  className="block text-sm text-gray-800 hover:text-blue-600 py-1"
                                   onClick={() => {
                                     setIsMenuOpen(false);
                                     setIsMobileServicesOpen(false);
                                   }}
                                 >
-                                  {service}
-                                </a>
+                                  {service.label}
+                                </Link>
                               </li>
                             ))}
                           </ul>
@@ -199,7 +200,7 @@ const Header = () => {
                     </div>
                   )}
                 </div>
-                
+
                 <a href="#trucking-insights" className="text-gray-700 hover:text-blue-600 font-medium">Trucking Insights</a>
                 <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium">About Us</a>
                 <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium">Contact Us</a>
