@@ -1,72 +1,74 @@
 import React, { useState } from 'react';
 import { FileText, Truck, Building, Calculator, GraduationCap, Settings } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const [activeCategory, setActiveCategory] = useState('irp');
 
+  // Map each service to its route path
   const serviceCategories = {
     irp: {
       title: 'IRP Registration Services',
       icon: <FileText className="w-8 h-8" />,
       services: [
-        'IRP NEW Registration',
-        'IRP Addition',
-        'IRP Transfer',
-        'IRP Renewal',
-        'IRP 45-Day Temporary Registration',
-        'Trailer Registration & Title Transfer',
-        'Truck Title Transfer'
+        { label: 'IRP NEW Registration', path: '/irp-new-registration' },
+        { label: 'IRP Addition', path: '/irp-addition' },
+        { label: 'IRP Transfer', path: '/irp-transfer' },
+        { label: 'IRP Renewal', path: '/irp-renewal' },
+        { label: 'IRP 45-Day Temporary Registration', path: '/irp-temp-registration' },
+        { label: 'Trailer Registration & Title Transfer', path: '/trailer-registration' },
+        { label: 'Truck Title Transfer', path: '/truck-title-transfer' }
       ]
     },
     ifta: {
       title: 'IFTA (Fuel Taxes) Quarterly Filings',
       icon: <Calculator className="w-8 h-8" />,
       services: [
-        'IFTA Registration & Renewal',
-        'IFTA Quarterly Tax Return Filings',
-        'KY, NM, NY Quarterly Filings',
-        'CT Quarterly Filings',
-        'OR Quarterly Filings'
+        { label: 'IFTA Registration & Renewal', path: '/ifta-registration' },
+        { label: 'IFTA Quarterly Tax Return Filings', path: '/ifta-quarterly' },
+        { label: 'KY, NM, NY Quarterly Filings', path: '/state-quarterly-ky-nm-ny' },
+        { label: 'CT Quarterly Filings', path: '/ct-quarterly' },
+        { label: 'OR Quarterly Filings', path: '/or-quarterly' }
       ]
     },
     formation: {
       title: 'Company Formation & Registration',
       icon: <Building className="w-8 h-8" />,
       services: [
-        'Corporations',
-        'LLC (Limited Liability Companies)',
-        'EIN (Employer Identification Number – Tax ID) Registration',
-        'Motor Carrier Authority Registration',
-        'DOT Number Registration and Updates',
-        'Broker Authority Registration',
-        'Illinois Intrastate Authority Registration'
+        { label: 'Corporations', path: '/corporations' },
+        { label: 'LLC (Limited Liability Companies)', path: '/llc-formation' },
+        { label: 'EIN (Employer Identification Number – Tax ID) Registration', path: '/ein-registration' },
+        { label: 'Motor Carrier Authority Registration', path: '/motor-carrier-authority' },
+        { label: 'DOT Number Registration and Updates', path: '/dot-number-registration' },
+        { label: 'Broker Authority Registration', path: '/broker-authority' },
+        { label: 'Illinois Intrastate Authority Registration', path: '/illinois-intrastate-authority' }
       ]
     },
     tax: {
       title: 'Tax Filing Services',
       icon: <Calculator className="w-8 h-8" />,
       services: [
-        'HWY Use Taxes (Form 2290)',
-        'BOC-3 Filing',
-        'UCR Registration Filing',
-        'Payroll'
+        { label: 'HWY Use Taxes (Form 2290)', path: '/form-2290' },
+        { label: 'BOC-3 Filing', path: '/boc-3' },
+        { label: 'UCR Registration Filing', path: '/ucr-registration' },
+        { label: 'Payroll', path: '/payroll' }
       ]
     },
     training: {
       title: 'Training Services',
       icon: <GraduationCap className="w-8 h-8" />,
       services: [
-        'CDL Drivers English language Proficiency test preparation training'
+        { label: 'CDL Drivers English language Proficiency test preparation training', path: '/cdl-english-training' }
       ]
     },
     misc: {
       title: 'Miscellaneous Services',
       icon: <Settings className="w-8 h-8" />,
       services: [
-        'IRP, IFTA, DOT Audits',
-        'SCAC Registration',
-        'Bookkeeping',
-        'Notary Public'
+        { label: 'IRP, IFTA, DOT Audits', path: '/audits' },
+        { label: 'SCAC Registration', path: '/scac-registration' },
+        { label: 'Bookkeeping', path: '/bookkeeping' },
+        { label: 'Notary Public', path: '/notary-public' }
       ]
     }
   };
@@ -86,12 +88,13 @@ const Services = () => {
           {Object.entries(serviceCategories).map(([key, category]) => (
             <button
               key={key}
-              onClick={() => setActiveCategory(key)}
+              type="button"
               className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all ${
                 activeCategory === key
                   ? 'bg-blue-600 text-white shadow-lg'
                   : 'bg-white text-gray-700 hover:bg-blue-50 border border-gray-200'
               }`}
+              onClick={() => setActiveCategory(key)}
             >
               {category.icon}
               <span className="hidden sm:inline">{category.title}</span>
@@ -114,19 +117,22 @@ const Services = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {serviceCategories[activeCategory as keyof typeof serviceCategories].services.map((service, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6 hover:bg-blue-50 transition-colors group">
+              <Link
+                key={index}
+                to={service.path}
+                className="bg-gray-50 rounded-lg p-6 hover:bg-blue-50 transition-colors group block"
+              >
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 group-hover:bg-blue-700"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900 group-hover:text-blue-700 transition-colors">
-                      {service}
+                      {service.label}
                     </h4>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
-
         </div>
       </div>
     </section>
