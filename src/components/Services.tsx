@@ -127,14 +127,6 @@ const Services = () => {
             ))}
           </div>
 
-          <div className="text-center mt-8">
-            <a 
-              href="#consultation" 
-              className="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-            >
-              Get Started with These Services
-            </a>
-          </div>
         </div>
       </div>
     </section>
