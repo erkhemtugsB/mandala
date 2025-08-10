@@ -69,7 +69,7 @@ function App() {
             <Route path="/truck-title-transfer" element={<TruckTitleTransfer />} />
 
             {/* IFTA Filing */}
-            <Route path="/ifta-registration" element={<IftaRegistration />} />
+            <Route path="/ifta-registration" element={<IftaRegistration />} /> There is a form
             <Route path="/ifta-quarterly" element={<IftaQuarterly />} />
             <Route path="/state-quarterly-ky-nm-ny" element={<StateQuarterlyKyNmNy />} />
             <Route path="/ct-quarterly" element={<CtQuarterly />} />
