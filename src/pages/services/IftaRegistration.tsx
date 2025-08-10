@@ -1,28 +1,58 @@
 const IftaRegistration = () => {
   return (
-        <div className="mt-6 p-8 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-blue-600 mb-4">IFTA Quarterly Report Filing Requirements</h2>
-      <p className="text-gray-700 mb-4">
-        If you would like us to file your IFTA quarterly report, you will have to provide the following information:
+    <div className="p-6 max-w-6xl mx-auto text-gray-700">
+      <h1 className="text-4xl font-bold mb-6 text-blue-900">
+        International Fuel Tax Agreement (IFTA) Services
+      </h1>
+
+      <p className="mb-6 text-lg">
+        The International Fuel Tax Agreement (IFTA) simplifies fuel tax reporting for motor carriers operating in multiple U.S. states and Canadian provinces.
+        With IFTA, you can file one quarterly fuel tax report covering all member jurisdictions.
+        Below is an overview of IFTA, who needs it, and how to register and renew.
       </p>
-      <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-        <li>Copy of your IFTA license or the reminder letter you received to file your quarterly IFTA report</li>
-        <li>Total miles in every state you traveled for the period required</li>
-        <li>Total gallons fueled in every state you traveled for the period required</li>
+
+      <h2 className="text-2xl font-semibold mb-4">What is IFTA?</h2>
+      <p className="mb-6">
+        IFTA is an agreement among 48 U.S. states and 10 Canadian provinces that streamlines the process of reporting and paying fuel use taxes.
+        Carriers report mileage and fuel purchases to their base jurisdiction, which distributes the taxes to other jurisdictions where you operate.
+      </p>
+
+      <h2 className="text-2xl font-semibold mb-4">Who Needs IFTA Registration?</h2>
+      <ul className="list-disc list-inside mb-6 space-y-2">
+        <li>Operate in two or more IFTA jurisdictions.</li>
+        <li>Have a gross vehicle weight over 26,000 pounds, <strong>or</strong></li>
+        <li>Have three or more axles regardless of weight, <strong>or</strong></li>
+        <li>Are part of a combination of vehicles exceeding 26,000 pounds gross weight.</li>
       </ul>
-      <div className="mb-4">
-        <p className="font-semibold text-gray-800">Quarterly Deadlines:</p>
-        <ul className="list-disc list-inside space-y-1 text-gray-700">
-          <li>1st Quarter (January, February, March) — due by April 30</li>
-          <li>2nd Quarter (April, May, June) — due by July 31</li>
-          <li>3rd Quarter (July, August, September) — due by October 31</li>
-          <li>4th Quarter (October, November, December) — due by January 31</li>
-        </ul>
-      </div>
-      <p className="text-gray-700">
-        You can bring the documents to our office Monday thru Friday, 9 am to 5 pm, and Saturday 10 am to 1 pm, fax them at
-        <span className="font-semibold"> (847) 346-0531</span>, or email them to
-        <span className="font-semibold"> support@prospectlc.com</span>.
+
+      <h2 className="text-2xl font-semibold mb-4">How to Register for IFTA</h2>
+      <ol className="list-decimal list-inside mb-6 space-y-4">
+        <li><strong>Determine Your Base Jurisdiction:</strong> The state or province where your business is registered and operational records are kept.</li>
+        <li><strong>Complete the Application:</strong> Obtain and submit an IFTA license application (often available online).</li>
+        <li><strong>Pay the Registration Fee:</strong> Fees vary by jurisdiction and cover processing your license and decals.</li>
+        <li><strong>Receive IFTA License & Decals:</strong> Two decals per qualified vehicle will be issued.</li>
+        <li><strong>Display the Decals:</strong> Place one decal on each side of the vehicle’s cab.</li>
+      </ol>
+
+      <h2 className="text-2xl font-semibold mb-4">Annual Renewal Process</h2>
+      <ol className="list-decimal list-inside mb-6 space-y-4">
+        <li><strong>Submit Renewal Application:</strong> Most jurisdictions accept renewals from late October to early November.</li>
+        <li><strong>Verify Information:</strong> Ensure business and vehicle details are current.</li>
+        <li><strong>Pay Renewal Fees:</strong> Usually similar to initial registration fees.</li>
+        <li><strong>Receive New Decals:</strong> Display starting January 1st of the new year.</li>
+      </ol>
+
+      <h2 className="text-2xl font-semibold mb-4">Important Notes</h2>
+      <ul className="list-disc list-inside mb-6 space-y-2">
+        <li><strong>Quarterly Reporting:</strong> File IFTA fuel tax reports every quarter, detailing miles and fuel purchases.</li>
+        <li><strong>Penalties:</strong> Late or inaccurate filings can result in fines and suspension of operating privileges.</li>
+        <li><strong>Recordkeeping:</strong> Keep detailed mileage and fuel purchase records for at least 5 years and 9 months.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mb-4">Why Choose Us for IFTA Assistance?</h2>
+      <p>
+        We make IFTA registration and renewal simple. Our experts ensure your application is correct and submitted on time,
+        reducing delays and avoiding penalties. Let us handle the details so you can focus on the road.
       </p>
     </div>
 
