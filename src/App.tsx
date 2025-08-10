@@ -76,18 +76,18 @@ function App() {
             <Route path="/or-quarterly" element={<OrQuarterly />} />
 
             {/* Company Formation */}
-            <Route path="/corporations" element={<Corporations />} />
-            <Route path="/llc-formation" element={<LlcFormation />} />
-            <Route path="/ein-registration" element={<EinRegistration />} />
-            <Route path="/motor-carrier-authority" element={<MotorCarrierAuthority />} />
-            <Route path="/dot-number-registration" element={<DotNumberRegistration />} />
-            <Route path="/broker-authority" element={<BrokerAuthority />} />
-            <Route path="/illinois-intrastate-authority" element={<IllinoisIntrastateAuthority />} />
+            <Route path="/corporations" element={<Corporations />} /> There is a form
+            <Route path="/llc-formation" element={<LlcFormation />} /> There is a form
+            <Route path="/ein-registration" element={<EinRegistration />} /> There is a form
+            <Route path="/motor-carrier-authority" element={<MotorCarrierAuthority />} /> There is a form
+            <Route path="/dot-number-registration" element={<DotNumberRegistration />} /> There is a form
+            <Route path="/broker-authority" element={<BrokerAuthority />} /> There is a form
+            <Route path="/illinois-intrastate-authority" element={<IllinoisIntrastateAuthority />} /> There is a form
 
             {/* Tax Filing */}
-            <Route path="/form-2290" element={<Form2290 />} />
-            <Route path="/boc-3" element={<Boc3 />} />
-            <Route path="/ucr-registration" element={<UcrRegistration />} />
+            <Route path="/form-2290" element={<Form2290 />} /> There is a form
+            <Route path="/boc-3" element={<Boc3 />} /> There is a form
+            <Route path="/ucr-registration" element={<UcrRegistration />} /> There is a form
             <Route path="/payroll" element={<Payroll />} />
 
             {/* Training */}
@@ -95,7 +95,7 @@ function App() {
 
             {/* Miscellaneous */}
             <Route path="/audits" element={<Audits />} />
-            <Route path="/scac-registration" element={<ScacRegistration />} />
+            <Route path="/scac-registration" element={<ScacRegistration />} /> There is a form
             <Route path="/bookkeeping" element={<Bookkeeping />} />
             <Route path="/notary-public" element={<NotaryPublic />} />
           </Routes>
