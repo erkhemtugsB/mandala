@@ -62,7 +62,20 @@ const Form2290 = () => {
         <li>Ensure vehicle registration is not delayed.</li>
         <li>Support U.S. highway infrastructure projects.</li>
       </ul>
+      <div className="mt-16 bg-blue-900 rounded-2xl p-8 text-white text-center">
+        <h3 className="text-3xl font-bold mb-4">Need Expert Guidance?</h3>
+        <p className="text-xl text-blue-100 mb-6 max-w-2xl mx-auto">
+          Our experienced team can help you navigate the complexities of trucking regulations and optimize your business operations.
+        </p>
+        <a
+          href="/contact"
+          className="inline-flex items-center bg-yellow-500 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors"
+        >
+          Start Filing
+        </a>
+      </div>
     </div>
+
 
   );
 };
