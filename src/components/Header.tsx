@@ -83,7 +83,7 @@ const Header = () => {
               <img
                 src="/logo.png"
                 alt="DegyUS Consulting"
-                className="h-12 w-auto mr-3"
+                className="h-16 w-auto mr-3"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                 }}
@@ -94,7 +94,7 @@ const Header = () => {
                 </div>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">DegyUS Consulting</h1>
+                <h1 className="text-2xl font-bold text-gray-900">DegyUS Consulting</h1>
                 {/* <p className="text-sm text-gray-600">Professional Trucking Services</p> */}
               </div>
             </div>
