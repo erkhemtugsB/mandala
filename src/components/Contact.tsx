@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,12 +11,32 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will contact you soon.');
-    setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    setLoading(true);
+
+    try {
+      await emailjs.send(
+        'service_mwywc9p', // Service ID
+        'template_powps2n', // Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message
+        },
+        'KBizYpyKzPjpMN-VN' // User ID (public key)
+      );
+      alert('Thank you for your message! We will contact you soon.');
+      setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    } catch (error) {
+      alert('Sorry, there was an error sending your message. Please try again later.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -163,13 +184,13 @@ const Contact = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   >
                     <option value="">Select a service</option>
-                    <option value="irp">IRP Registration</option>
-                    <option value="ifta">IFTA Filing</option>
-                    <option value="dot">DOT Registration</option>
-                    <option value="formation">Company Formation</option>
-                    <option value="tax">Tax Filing</option>
-                    <option value="training">Training</option>
-                    <option value="other">Other</option>
+                    <option value="IRP Registration">IRP Registration</option>
+                    <option value="IFTA Filing">IFTA Filing</option>
+                    <option value="DOT Registration">DOT Registration</option>
+                    <option value="Company Formation">Company Formation</option>
+                    <option value="Tax Filing">Tax Filing</option>
+                    <option value="Training">Training</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
               </div>
@@ -193,9 +214,10 @@ const Contact = () => {
               <button
                 type="submit"
                 className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
+                disabled={loading}
               >
                 <Send className="w-5 h-5" />
-                <span>Send Message</span>
+                <span>{loading ? 'Sending...' : 'Send Message'}</span>
               </button>
             </form>
           </div>
