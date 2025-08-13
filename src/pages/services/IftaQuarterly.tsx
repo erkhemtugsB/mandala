@@ -21,8 +21,8 @@ const IftaQuarterly = () => {
       </div>
       <p className="text-gray-700">
         You can bring the documents to our office Monday thru Friday, 9 am to 5 pm, and Saturday 10 am to 1 pm, fax them at
-        <span className="font-semibold"> (847) 346-0531</span>, or email them to
-        <span className="font-semibold"> support@prospectlc.com</span>.
+        <span className="font-semibold"> (224) 830-3555</span>, or email them to
+        <span className="font-semibold"> degyusconsulting@gmail.com</span>.
       </p>
     </div>
   );
