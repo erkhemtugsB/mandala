@@ -84,7 +84,7 @@ const About = () => {
                 <span className="text-4xl font-bold text-white">T</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-900 mb-2">Tuya</h4>
-              <p className="text-purple-600 font-semibold mb-3">Co-Founder & COO</p>
+              <p className="text-purple-600 font-semibold mb-3">Co-Founder & CEO</p>
               <p className="text-gray-600 leading-relaxed">
                 Tuya specializes in regulatory compliance and business formation, ensuring that every client receives expert guidance tailored to their specific needs.
               </p>
