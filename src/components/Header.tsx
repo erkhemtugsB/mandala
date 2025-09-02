@@ -55,7 +55,7 @@ const Header = () => {
   return (
     <>
       {/* Top Contact Bar */}
-      <div className="bg-blue-900 text-white py-2 px-4">
+      <div className="bg-yellow-500 text-white py-2 px-4">
         {/* <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
           <div className="flex items-center space-x-4 mb-2 sm:mb-0">
             <div className="flex items-center space-x-1">
