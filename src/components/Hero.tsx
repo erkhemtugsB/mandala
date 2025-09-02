@@ -3,8 +3,8 @@ import { Truck, Shield, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="relative text-white py-20 min-h-screen flex items-center"
       style={{
         backgroundImage: 'linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 59, 138, 0.27)), url(https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg)',
@@ -17,23 +17,22 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Your Trusted Partner in 
-              <span className="text-yellow-400"> Trucking Success</span>
+              One stop, Many Solutions- Serving You With Care
+              <span className="text-yellow-400"> since 2019 </span>
             </h1>
             <p className="text-xl mb-8 text-blue-100 leading-relaxed">
-              Professional trucking consulting services to help your business navigate licensing, 
-              compliance, and operational challenges with confidence.
+              Complete solutions made simple. Always with your satisfaction in mind             
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <a 
-                href="#consultation" 
+              <a
+                href="#consultation"
                 className="bg-yellow-500 text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-center"
               >
-                Get Free Consultation
+                View Our Services
               </a>
-              <a 
-                href="#services" 
+              <a
+                href="#services"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors text-center"
               >
                 View Our Services
