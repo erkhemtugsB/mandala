@@ -6,7 +6,7 @@ const About = () => {
     <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">About DegyUS Consulting</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">About Mandala Comprehensive Service</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Your trusted partners in trucking business success, dedicated to providing comprehensive solutions for all your licensing and compliance needs.
           </p>
