@@ -17,27 +17,26 @@ const About = () => {
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                <strong>Amara & Tuya</strong>, owners of DegyUS Consulting, Inc., find their greatest joy in helping customers succeed in their trucking companies by resolving their licensing and business issues through our one-stop-all services.
+                My name is <strong>Bobo Steele (Gantumur)</strong>, and I opened Mandala Comprehensive Service with a clear dream: to help the Mongolian community access true, correct, and verified information from professionals—rather than relying on word of mouth that often causes confusion and wastes precious time. I wanted to create a one-stop shop where people could fulfill all their needs in one trusted place, with confidence that they were receiving professional guidance every step of the way.
               </p>
               <p>
-                We got our start in the trucking industry in <strong>2017</strong>. Working for a trucking company, Amara and her team were responsible for booking loads, dispatch, customer service, accounts payable and receivable, fuel tax reporting, registration and permit issuance, bookkeeping, employee supervision, and more.
+                The name <strong>Mandala</strong> carries deep meaning. It represents the idea that life, like a mandala, is constantly expanding outward—always growing, always connecting. My mom chose this name because we wanted my business to grow alongside the community, reflecting the same spirit of resilience and renewal.              </p>
+              <p>
+                Since opening our doors in 2019, <strong>Mandala Comprehensive Service</strong> has not only grown within the Mongolian community but has also expanded to serve the general public. Today, we proudly help individuals, families, and businesses from all backgrounds with tax, insurance, real estate, legal document preparation, and business services.
               </p>
               <p>
-                In <strong>2023</strong>, Amara and Tuya decided to put all their experience to work in their own business, and DegyUS Consulting, Inc. was born. Our financial company had many truck driver clients, providing them with professional advice and services, and in 2023, we separated our CONSULTING services.
-              </p>
-              <p>
-                We are happy to see our business growing day by day and continuing to grow in the future.
+                At Mandala llc, my goal is simple: to grow together with the community, to provide reliable services people can trust, and to make sure no one feels lost or left behind.
               </p>
             </div>
           </div>
 
-          <div className="relative">
-            <img 
-              src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=800" 
-              alt="Professional team meeting" 
-              className="rounded-2xl shadow-lg w-full h-80 object-cover"
+          <div className="relative w-full h-full min-h-[20rem] flex-1">
+            <img
+              src="/about.jpeg"
+              alt="About us"
+              className="absolute inset-0 w-full h-full object-cover object-top rounded-2xl shadow-lg"
             />
-            <div className="absolute inset-0 bg-blue-900/20 rounded-2xl"></div>
+            <div className="absolute inset-0 rounded-2xl"></div>
           </div>
         </div>
 
@@ -45,7 +44,7 @@ const About = () => {
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-white rounded-xl p-6 text-center shadow-lg">
               <Award className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-              <div className="text-3xl font-bold text-gray-900 mb-2">7+</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">15+</div>
               <div className="text-gray-600">Years of Experience</div>
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-lg">
@@ -66,31 +65,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl p-8">
-          <h3 className="text-3xl font-bold text-gray-900 text-center mb-8">Meet Our Founders</h3>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="text-center">
-              <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-4xl font-bold text-white">A</span>
-              </div>
-              <h4 className="text-2xl font-bold text-gray-900 mb-2">Amara</h4>
-              <p className="text-blue-600 font-semibold mb-3">Co-Founder & CEO</p>
-              <p className="text-gray-600 leading-relaxed">
-                With over 7 years in the trucking industry, Amara brings extensive experience in operations, compliance, and business development to help clients achieve their goals.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-32 h-32 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-4xl font-bold text-white">T</span>
-              </div>
-              <h4 className="text-2xl font-bold text-gray-900 mb-2">Tuya</h4>
-              <p className="text-purple-600 font-semibold mb-3">Co-Founder & CEO</p>
-              <p className="text-gray-600 leading-relaxed">
-                Tuya specializes in regulatory compliance and business formation, ensuring that every client receives expert guidance tailored to their specific needs.
-              </p>
-            </div>
-          </div>
-        </div>
+     
 
         {/* <div className="mt-16 text-center">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h3>

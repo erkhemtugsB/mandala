@@ -143,7 +143,7 @@ const Header = () => {
                 </div>
               </div>
 
-              <Link to="/trucking-insights" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Trucking Insights</Link>
+              {/* <Link to="/trucking-insights" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Trucking Insights</Link> */}
               <Link to="/about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">About Us</Link>
               <Link to="/contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact Us</Link>
               {/* <a href="#consultation" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">Free Consultation</a> */}

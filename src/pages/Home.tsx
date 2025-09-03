@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Services />
+      {/* <Services /> */}
       <About />
     </>
   );
