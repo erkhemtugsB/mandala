@@ -9,27 +9,26 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
-                <img
-                  src="/logo.png"
-                  alt="DegyUS Consulting"
-                  className="h-12 w-auto mr-3"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
+              <img
+                src="/logo.png"
+                alt="DegyUS Consulting"
+                className="h-12 w-auto mr-3"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
               <div>
                 <h3 className="text-2xl font-bold">DegyUS Consulting</h3>
                 {/* <p className="text-gray-400">Professional Trucking Services</p> */}
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Your trusted partner in trucking business success. We provide comprehensive consulting services
-              to help your trucking company navigate licensing, compliance, and operational challenges with confidence.
+              Your trusted partner for providing comprehensive solutions and verified guidance for all your service and information needs.
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300">(224) 830-3555 | (814) 883-0073</span>
+                <span className="text-gray-300">(206) 787-0100</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-yellow-400" />
@@ -37,7 +36,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300">5105 Tollview Dr, Suite 246, Rolling Meadows, IL 60008</span>
+                <span className="text-gray-300">8490 Mukilteo Speedway, Mukilteo, WA 98275, Suite 203</span>
               </div>
             </div>
           </div>

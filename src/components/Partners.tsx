@@ -6,18 +6,18 @@ import { Navigation } from 'swiper/modules';
 
 // Local image imports (if you put them in /public, use /filename.png as src)
 const partnerLogos = [
-  { name: "Allstate", url: "/allstate.png" },
-  { name: "Nationwide", url: "/nationwide.png" },
-  { name: "Travelers", url: "/travelers.png" },
-  { name: "Safeco", url: "/safeco.png" },
-  { name: "Progressive", url: "/progressive.png" },
-  { name: "Kemper", url: "/kemper.png" },
-  { name: "Stillwater", url: "/stillwater.png" },
-  { name: "BTIS", url: "/btis.png" },
-  { name: "MetLife", url: "/metlife.png" },
-  { name: "Bristol West", url: "/bristolwest.png" },
-  { name: "Encompass", url: "/encompass.png" },
-  { name: "National General", url: "/nationalgeneral.png" },
+  { name: "Allstate", url: "https://www.allstate.com/resources/Allstate/images/lp/allstateagent/allstate-logo.png" },
+  { name: "Nationwide", url: "https://www.annuity.org/wp-content/uploads/logo-nationwide.png" },
+  { name: "Travelers", url: "https://thecibgroup.com/wp-content/uploads/2017/06/Travelers-Insurance-Logo-e1503062993451.png" },
+  { name: "Safeco", url: "https://www.answerfinancial.com/ContentResponsive/Assets/images/partners/partners-page/safeco.png" },
+  { name: "Progressive", url: "https://www.jordanharbinger.com/wp-content/uploads/2021/08/progressive-insurance-350x250.png" },
+  { name: "Kemper", url: "https://www.milestonepnc.com/wp-content/uploads/2017/03/Kemper-Auto-Logo-1024x535.jpg" },
+  { name: "Stillwater", url: "https://nsure.com/wp-content/uploads/2021/05/stillwater-e1622817887178.png" },
+  { name: "BTIS", url: "https://cdn-res.keymedia.com/cms/images/us/003/0271_637527486766083818.png" },
+  { name: "MetLife", url: "https://oc-ins.com/wp-content/uploads/metlife_eng_logo_rgb.png" },
+  { name: "Bristol West", url: "https://cdn.cookielaw.org/logos/6f9548c9-3a87-4370-a23c-df4855d9b84c/018ef86c-ab32-75e2-9f03-74433091e063/0f308698-a8de-4609-a8b3-0bdacaec0388/BristolWest.png" },
+  { name: "Encompass", url: "https://www.nerdwallet.com/cdn-cgi/image/quality=85/cdn/insurance/logos/encompass.png" },
+  { name: "National General", url: "https://cdn.thezebra.com/zfront/media/production/carrier-logos/National_General.png" },
 ];
 
 const Partners = () => {

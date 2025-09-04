@@ -8,7 +8,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Mandala Comprehensive Service</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your trusted partners in trucking business success, dedicated to providing comprehensive solutions for all your licensing and compliance needs.
+              Your trusted partner for providing comprehensive solutions and verified guidance for all your service and information needs.
           </p>
         </div>
 
