@@ -8,7 +8,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Mandala Comprehensive Service</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Your trusted partner for providing comprehensive solutions and verified guidance for all your service and information needs.
+            Your trusted partner for providing comprehensive solutions and verified guidance for all your service and information needs.
           </p>
         </div>
 
@@ -27,6 +27,8 @@ const About = () => {
               <p>
                 At Mandala llc, my goal is simple: to grow together with the community, to provide reliable services people can trust, and to make sure no one feels lost or left behind.
               </p>
+              <p>Bolortsetseg Steele
+                EA | PTIN: 02121485 | Advanced Paralegal</p>
             </div>
           </div>
 
@@ -65,7 +67,7 @@ const About = () => {
           </div>
         </div>
 
-     
+
 
         {/* <div className="mt-16 text-center">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h3>

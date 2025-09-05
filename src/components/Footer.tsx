@@ -18,7 +18,7 @@ const Footer = () => {
                 }}
               />
               <div>
-                <h3 className="text-2xl font-bold">DegyUS Consulting</h3>
+                <h3 className="text-2xl font-bold">Mandala Comprehensive Services</h3>
                 {/* <p className="text-gray-400">Professional Trucking Services</p> */}
               </div>
             </div>
@@ -32,7 +32,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300">degyusconsulting@gmail.com</span>
+                <span className="text-gray-300">mandalacs2020@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-yellow-400" />
@@ -48,7 +48,6 @@ const Footer = () => {
               <li><a href="/" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
               <li><a href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
               <li><a href="/services" className="text-gray-300 hover:text-white transition-colors">Services</a></li>
-              <li><a href="/trucking-insights" className="text-gray-300 hover:text-white transition-colors">Trucking Insights</a></li>
               <li><a href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
             </ul>
           </div>
@@ -57,14 +56,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Our Services</h4>
             <ul className="space-y-3 text-sm">
-              <li><span className="text-gray-300">IRP Registration</span></li>
-              <li><span className="text-gray-300">IFTA Filing</span></li>
-              <li><span className="text-gray-300">DOT Registration</span></li>
-              <li><span className="text-gray-300">Company Formation</span></li>
-              <li><span className="text-gray-300">Tax Filing</span></li>
-              <li><span className="text-gray-300">CDL Training</span></li>
-              <li><span className="text-gray-300">Bookkeeping</span></li>
+              <li><span className="text-gray-300">Tax Services</span></li>
+              <li><span className="text-gray-300">Insurance Services</span></li>
+              <li><span className="text-gray-300">Real Estate Services</span></li>
               <li><span className="text-gray-300">Notary Services</span></li>
+              <li><span className="text-gray-300">Legal Document Services</span></li>
+              <li><span className="text-gray-300">Business Consultation</span></li>
             </ul>
           </div>
         </div>
@@ -72,7 +69,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 DegyUS Consulting Inc. All rights reserved.
+              © 2025 Mandala Comprehensive Services. All rights reserved.
             </p>
             {/* <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>

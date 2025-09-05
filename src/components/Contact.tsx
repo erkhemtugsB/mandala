@@ -68,8 +68,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone Numbers</h4>
-                  <p className="text-gray-600">(224) 830-3555</p>
-                  <p className="text-gray-600">(814) 883-0073</p>
+                  <p className="text-gray-600">(206) 787-0100</p>
                 </div>
               </div>
 
@@ -79,7 +78,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Email Address</h4>
-                  <p className="text-gray-600">degyusconsulting@gmail.com</p>
+                  <p className="text-gray-600">mandalacs2020@gmail.com</p>
                 </div>
               </div>
 
@@ -90,8 +89,9 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Office Address</h4>
                   <p className="text-gray-600">
-                    5105 Tollview Dr, Suite 246<br />
-                    Rolling Meadows, IL 60008
+                    8490 Mukilteo Speedway, Mukilteo, WA<br />
+                    98275, Suite 203
+
                   </p>
                 </div>
               </div>
