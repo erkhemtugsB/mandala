@@ -45,22 +45,22 @@ const About = () => {
         <div className="mb-16">
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-white rounded-xl p-6 text-center shadow-lg">
-              <Award className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <Award className="w-12 h-12 text-orange-300 mx-auto mb-4" />
               <div className="text-3xl font-bold text-gray-900 mb-2">15+</div>
               <div className="text-gray-600">Years of Experience</div>
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-lg">
-              <Users className="w-12 h-12 text-green-600 mx-auto mb-4" />
+              <Users className="w-12 h-12 text-orange-300 mx-auto mb-4" />
               <div className="text-3xl font-bold text-gray-900 mb-2">500+</div>
               <div className="text-gray-600">Satisfied Clients</div>
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-lg">
-              <Target className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+              <Target className="w-12 h-12 text-orange-300 mx-auto mb-4" />
               <div className="text-3xl font-bold text-gray-900 mb-2">100%</div>
               <div className="text-gray-600">Success Rate</div>
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-lg">
-              <Heart className="w-12 h-12 text-red-600 mx-auto mb-4" />
+              <Heart className="w-12 h-12 text-orange-300 mx-auto mb-4" />
               <div className="text-3xl font-bold text-gray-900 mb-2">24/7</div>
               <div className="text-gray-600">Support Available</div>
             </div>
