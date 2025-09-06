@@ -184,13 +184,12 @@ const Contact = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   >
                     <option value="">Select a service</option>
-                    <option value="IRP Registration">IRP Registration</option>
-                    <option value="IFTA Filing">IFTA Filing</option>
-                    <option value="DOT Registration">DOT Registration</option>
-                    <option value="Company Formation">Company Formation</option>
-                    <option value="Tax Filing">Tax Filing</option>
-                    <option value="Training">Training</option>
-                    <option value="Other">Other</option>
+                    <option value="Tax Services">Tax Services</option>
+                    <option value="Insurance Services">Insurance Services</option>
+                    <option value="Real Estate Services">Real Estate Services</option>
+                    <option value="Noary Services">Notary Services</option>
+                    <option value="Legal Document Preparation">Legal Document Preparation</option>
+                    <option value="Business Consultation">Business Consultation</option>
                   </select>
                 </div>
               </div>

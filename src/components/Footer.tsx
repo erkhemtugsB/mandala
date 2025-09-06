@@ -64,6 +64,7 @@ const Footer = () => {
               <li><span className="text-gray-300">Business Consultation</span></li>
             </ul>
           </div>
+          
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8">

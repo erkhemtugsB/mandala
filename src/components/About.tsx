@@ -32,7 +32,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="relative w-full h-full min-h-[20rem] flex-1">
+          <div className="relative w-full h-full min-h-[12rem] flex-1">
             <img
               src="/about.jpeg"
               alt="About us"
