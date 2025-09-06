@@ -56,7 +56,7 @@ const About = () => {
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-lg">
               <Target className="w-12 h-12 text-orange-300 mx-auto mb-4" />
-              <div className="text-3xl font-bold text-gray-900 mb-2">100%</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">99%</div>
               <div className="text-gray-600">Success Rate</div>
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-lg">

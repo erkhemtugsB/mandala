@@ -1,8 +1,8 @@
-const Audits = () => {
+const PersonalTax = () => {
   return (
     <div className="mt-6 p-16 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold text-blue-600 mb-4">
-        Prospect Licensing Services
+        Personal Tax (Form 1040)
       </h2>
       <ul className="list-disc list-inside space-y-3 text-gray-700 mb-6">
         <li>DOT New Entrant Audit survival training, preparation, and assistance!</li>
@@ -27,4 +27,4 @@ const Audits = () => {
   );
 };
 
-export default Audits;
+export default PersonalTax;

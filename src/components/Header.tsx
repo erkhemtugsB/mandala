@@ -8,45 +8,43 @@ const Header = () => {
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   const serviceCategories: Record<string, { label: string; path: string }[]> = {
-    'IRP Registration': [
-      { label: 'IRP NEW Registration', path: '/irp-new-registration' },
-      { label: 'IRP Addition', path: '/irp-addition' },
-      { label: 'IRP Transfer', path: '/irp-transfer' },
-      { label: 'IRP Renewal', path: '/irp-renewal' },
-      { label: 'IRP 45-Day Temporary Registration', path: '/irp-temp-registration' },
-      { label: 'Trailer Registration & Title Transfer', path: '/trailer-registration' },
-      { label: 'Truck Title Transfer', path: '/truck-title-transfer' },
+    'Tax Services': [
+      { label: 'Personal Tax (Form 1040)', path: '/personal-tax' },
+      { label: 'Business Tax (Forms 1065, 1120, 1120S, Schedule C)', path: '/business-tax' },
+      { label: 'Tax ID or ITIN Applications', path: '/tax-id' },
+      { label: 'Create 1099 and W-2 Forms', path: '/create-1099' },
+      { label: 'Tax Consultation Services', path: '/tax-consultation' },
     ],
-    'IFTA Filing': [
-      { label: 'IFTA Registration & Renewal', path: '/ifta-registration' },
-      { label: 'IFTA Quarterly Tax Return Filings', path: '/ifta-quarterly' },
-      { label: 'KY, NM, NY Quarterly Filings', path: '/state-quarterly-ky-nm-ny' },
-      { label: 'CT Quarterly Filings', path: '/ct-quarterly' },
-      { label: 'OR Quarterly Filings', path: '/or-quarterly' },
+    'Insurance Services': [
+      { label: 'Personal Property: Auto, Home, Condo, Renters', path: '/personal-property' },
+      { label: 'Commercial: Trucking, Small Business (nail salon, construction, restaurants, etc.)', path: '/commercial' },
+      { label: 'Bonds', path: '/bonds' },
+      { label: 'Event Insurance', path: '/event' },
+      { label: 'Life Insurance', path: '/life' },
     ],
-    'Company Formation': [
-      { label: 'Corporations', path: '/corporations' },
-      { label: 'LLC Formation', path: '/llc-formation' },
-      { label: 'EIN Registration', path: '/ein-registration' },
-      { label: 'Motor Carrier Authority', path: '/motor-carrier-authority' },
-      { label: 'DOT Number Registration', path: '/dot-number-registration' },
-      { label: 'Broker Authority', path: '/broker-authority' },
-      { label: 'Illinois Intrastate Authority', path: '/illinois-intrastate-authority' },
+      'Real Estate Services': [
+      { label: 'Buy a House', path: '/ifta-registration' },
+      { label: 'Sell a House', path: '/ifta-quarterly' },
+      { label: 'Rent a House', path: '/state-quarterly-ky-nm-ny' },
+      { label: 'Event Insurance', path: '/ct-quarterly' },
+      { label: 'Consultation to prepare for loan approval', path: '/or-quarterly' },
     ],
-    'Tax Filing': [
-      { label: 'HWY Use Taxes (Form 2290)', path: '/form-2290' },
-      { label: 'BOC-3 Filing', path: '/boc-3' },
-      { label: 'UCR Registration Filing', path: '/ucr-registration' },
-      { label: 'Payroll', path: '/payroll' },
+    
+    'Notary Services': [
+      { label: 'General notary services', path: '/corporations' },
+      { label: 'Child travel consent forms', path: '/llc-formation' },
+      { label: 'Power of Attorney forms', path: '/ein-registration' },
+      { label: 'Other documents as needed', path: '/motor-carrier-authority' },
     ],
-    'Training': [
+    'Legal Document Preparation': [
+      { label: 'Immigration forms', path: '/form-2290' },
+      { label: 'Wills', path: '/boc-3' },
+      { label: 'Divorce paperwork', path: '/ucr-registration' },
+      { label: 'Other legal document filing assistance', path: '/ucr-registration' },
+      { label: 'Note: We do not provide legal consultation or legal advice.', path: '/payroll' },
+    ],
+    'Business Consultation': [
       { label: 'CDL English Proficiency Training', path: '/cdl-english-training' },
-    ],
-    'Miscellaneous': [
-      { label: 'IRP, IFTA, DOT Audits', path: '/audits' },
-      { label: 'SCAC Registration', path: '/scac-registration' },
-      { label: 'Bookkeeping', path: '/bookkeeping' },
-      { label: 'Notary Public', path: '/notary-public' },
     ],
   };
 
