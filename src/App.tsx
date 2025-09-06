@@ -21,29 +21,29 @@ import Event from './pages/services/insurance/Event.tsx';
 import Life from './pages/services/insurance/Life.tsx';
 import PersonalProperty from './pages/services/insurance/PersonalProperty.tsx';
 
-// // Company Formation
-// import Corporations from './pages/services/Corporations';
-// import LlcFormation from './pages/services/LlcFormation';
-// import EinRegistration from './pages/services/EinRegistration';
-// import MotorCarrierAuthority from './pages/services/MotorCarrierAuthority';
-// import DotNumberRegistration from './pages/services/DotNumberRegistration';
-// import BrokerAuthority from './pages/services/BrokerAuthority';
-// import IllinoisIntrastateAuthority from './pages/services/IllinoisIntrastateAuthority';
+// Real Estate Services
+import Buy from './pages/services/realEstate/Buy.tsx';
+import Consult from './pages/services/realEstate/Consult.tsx';
+import Rent from './pages/services/realEstate/Rent.tsx';
+import Sell from './pages/services/realEstate/Sell.tsx';
 
-// // Tax Filing
-// import Form2290 from './pages/services/Form2290';
-// import Boc3 from './pages/services/Boc3';
-// import UcrRegistration from './pages/services/UcrRegistration';
-// import Payroll from './pages/services/Payroll';
+// Notary Services
+import ChildTravel from './pages/services/notary/ChildTravel.tsx';
+import GeneralNotary from './pages/services/notary/GeneralNotary.tsx';
+import OtherDocuments from './pages/services/notary/OtherDocuments.tsx';
+import Power from './pages/services/notary/Power.tsx';
 
-// // Training
-// import CdlEnglishTraining from './pages/services/CdlEnglishTraining.tsx';
+// Legal Document Preparation
+import Wills from './pages/services/legal/Wills.tsx';
+import Divorce from './pages/services/legal/Divorce.tsx';
+import Other from './pages/services/legal/Other.tsx';
+import Immigration from './pages/services/legal/Immigration.tsx';
 
-// // Miscellaneous
-// import Audits from './pages/services/PersonalTax.tsx';
-// import ScacRegistration from './pages/services/ScacRegistration';
-// import Bookkeeping from './pages/services/Bookkeeping';
-// import NotaryPublic from './pages/services/NotaryPublic';
+// Business Consulation
+import Annual from './pages/services/business/Annual.tsx';
+import Labor from './pages/services/business/Labor.tsx';
+import OpenClose from './pages/services/business/OpenClose.tsx';
+import Secretary from './pages/services/business/Secretary.tsx';
 
 function App() {
   return (
@@ -71,29 +71,29 @@ function App() {
             <Route path="/life" element={<Life />} />
             <Route path="/personal-property" element={<PersonalProperty />} />
 
-            {/* Company Formation */}
-            {/* <Route path="/corporations" element={<Corporations />} /> There is a form
-            <Route path="/llc-formation" element={<LlcFormation />} /> There is a form
-            <Route path="/ein-registration" element={<EinRegistration />} /> There is a form
-            <Route path="/motor-carrier-authority" element={<MotorCarrierAuthority />} /> There is a form
-            <Route path="/dot-number-registration" element={<DotNumberRegistration />} /> There is a form
-            <Route path="/broker-authority" element={<BrokerAuthority />} /> There is a form
-            <Route path="/illinois-intrastate-authority" element={<IllinoisIntrastateAuthority />} /> There is a form */}
+            {/* Real Estate Services */}
+            <Route path="/buy-a-house" element={<Buy />} /> 
+            <Route path="/real-estate-consultation" element={<Consult />} />
+            <Route path="/rent-a-house" element={<Rent />} />
+            <Route path="/sell-a-house" element={<Sell />} />
 
-            {/* Tax Filing */}
-            {/* <Route path="/form-2290" element={<Form2290 />} /> There is a form
-            <Route path="/boc-3" element={<Boc3 />} /> There is a form
-            <Route path="/ucr-registration" element={<UcrRegistration />} /> There is a form
-            <Route path="/payroll" element={<Payroll />} /> */}
+            {/* Notary Services */}
+            <Route path="/power-of-attorney" element={<Power />} /> There is a form
+            <Route path="/child-travel" element={<ChildTravel />} /> There is a form
+            <Route path="/other-documents" element={<OtherDocuments />} /> There is a form
+            <Route path="/general-notary" element={<GeneralNotary />} />
 
-            {/* Training */}
-            {/* <Route path="/cdl-english-training" element={<CdlEnglishTraining />} /> */}
+            {/* Legal Document Preparation */}
+            <Route path="/immigration" element={<Immigration />} />
+            <Route path="/wills" element={<Wills />} />
+            <Route path="/divorce" element={<Divorce />} />
+            <Route path="/other" element={<Other />} />
 
-            {/* Miscellaneous */}
-            {/* <Route path="/audits" element={<Audits />} />
-            <Route path="/scac-registration" element={<ScacRegistration />} /> There is a form
-            <Route path="/bookkeeping" element={<Bookkeeping />} />
-            <Route path="/notary-public" element={<NotaryPublic />} /> */}
+            {/* Business Consulation */}
+            <Route path="/annual" element={<Annual />} />
+            <Route path="/labor" element={<Labor />} /> There is a form
+            <Route path="/open-close-businesses" element={<OpenClose />} />
+            <Route path="/secretary-of-state" element={<Secretary />} />
           </Routes>
         </main>
         <Footer />
