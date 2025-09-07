@@ -8,67 +8,66 @@ const Services = () => {
   // Map each service to its route path
   const serviceCategories = {
     irp: {
-      title: 'IRP Registration Services',
+      title: 'Tax Services',
       icon: <FileText className="w-8 h-8" />,
       services: [
-        { label: 'IRP NEW Registration', path: '/irp-new-registration' },
-        { label: 'IRP Addition', path: '/irp-addition' },
-        { label: 'IRP Transfer', path: '/irp-transfer' },
-        { label: 'IRP Renewal', path: '/irp-renewal' },
-        { label: 'IRP 45-Day Temporary Registration', path: '/irp-temp-registration' },
-        { label: 'Trailer Registration & Title Transfer', path: '/trailer-registration' },
-        { label: 'Truck Title Transfer', path: '/truck-title-transfer' }
+        { label: 'Personal Tax (Form 1040)', path: '/personal-tax' },
+        { label: 'Business Tax (Forms 1065, 1120, 1120S, Schedule C)', path: '/business-tax' },
+        { label: 'Tax ID or ITIN Applications', path: '/tax-id' },
+        { label: 'Create 1099 and W-2 Forms', path: '/create-1099' },
+        { label: 'Tax Consultation Services', path: '/tax-consultation' },
       ]
     },
     ifta: {
-      title: 'IFTA (Fuel Taxes) Quarterly Filings',
+      title: 'Insurance Services',
       icon: <Calculator className="w-8 h-8" />,
       services: [
-        { label: 'IFTA Registration & Renewal', path: '/ifta-registration' },
-        { label: 'IFTA Quarterly Tax Return Filings', path: '/ifta-quarterly' },
-        { label: 'KY, NM, NY Quarterly Filings', path: '/state-quarterly-ky-nm-ny' },
+        { label: 'Personal Property: Auto, Home, Condo, Renters', path: '/personal-property' },
+        { label: 'Commercial: Trucking, Small Business (nail salon, construction, restaurants, etc.)', path: '/commercial' },
+        { label: 'Bonds', path: '/bonds' },
         { label: 'CT Quarterly Filings', path: '/ct-quarterly' },
         { label: 'OR Quarterly Filings', path: '/or-quarterly' }
       ]
     },
     formation: {
-      title: 'Company Formation & Registration',
+      title: 'Real Estate Services',
       icon: <Building className="w-8 h-8" />,
       services: [
-        { label: 'Corporations', path: '/corporations' },
-        { label: 'LLC (Limited Liability Companies)', path: '/llc-formation' },
-        { label: 'EIN (Employer Identification Number – Tax ID) Registration', path: '/ein-registration' },
-        { label: 'Motor Carrier Authority Registration', path: '/motor-carrier-authority' },
-        { label: 'DOT Number Registration and Updates', path: '/dot-number-registration' },
-        { label: 'Broker Authority Registration', path: '/broker-authority' },
-        { label: 'Illinois Intrastate Authority Registration', path: '/illinois-intrastate-authority' }
+        { label: 'Buy a House', path: '/buy-a-house' },
+        { label: 'Sell a House', path: '/sell-a-house' },
+        { label: 'Rent a House', path: '/rent-a-house' },
+        { label: 'Consultation to prepare for loan approval', path: '/real-estate-consultation' }
       ]
     },
     tax: {
-      title: 'Tax Filing Services',
+      title: 'Notary Services',
       icon: <Calculator className="w-8 h-8" />,
       services: [
-        { label: 'HWY Use Taxes (Form 2290)', path: '/form-2290' },
-        { label: 'BOC-3 Filing', path: '/boc-3' },
-        { label: 'UCR Registration Filing', path: '/ucr-registration' },
-        { label: 'Payroll', path: '/payroll' }
+        { label: 'General notary services', path: '/general-notary' },
+        { label: 'Child travel consent forms', path: '/child-travel' },
+        { label: 'Power of Attorney forms', path: '/power-of-attorney' },
+        { label: 'Other documents as needed', path: '/other-documents' }
       ]
     },
     training: {
-      title: 'Training Services',
+      title: 'Legal Document Preparation',
       icon: <GraduationCap className="w-8 h-8" />,
       services: [
-        { label: 'CDL Drivers English language Proficiency test preparation training', path: '/cdl-english-training' }
+        { label: 'Immigration forms', path: '/immigration-forms' },
+        { label: 'Wills', path: '/wills' },
+        { label: 'Divorce paperwork', path: '/divorce' },
+        { label: 'Other legal document filing assistance', path: '/other' },
+        { label: 'Note: We do not provide legal consultation or legal advice.', path: '/' }
       ]
     },
     misc: {
-      title: 'Miscellaneous Services',
+      title: 'Business Consultation',
       icon: <Settings className="w-8 h-8" />,
       services: [
-        { label: 'IRP, IFTA, DOT Audits', path: '/audits' },
-        { label: 'SCAC Registration', path: '/scac-registration' },
-        { label: 'Bookkeeping', path: '/bookkeeping' },
-        { label: 'Notary Public', path: '/notary-public' }
+        { label: 'Open/close businesses (LLC, Inc., Nonprofit)', path: '/open-close-businesses' },
+        { label: 'Annual or quarterly reports filing', path: '/annual-reports' },
+        { label: 'Labor & Industries (workers’ comp) filings', path: '/labor' },
+        { label: 'Secretary of State and Department of Revenue filings', path: '/secretary-of-state' }
       ]
     }
   };
@@ -91,7 +90,7 @@ const Services = () => {
               type="button"
               className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all ${
                 activeCategory === key
-                  ? 'bg-blue-600 text-white shadow-lg'
+                  ? 'bg-yellow-500 text-white shadow-lg'
                   : 'bg-white text-gray-700 hover:bg-blue-50 border border-gray-200'
               }`}
               onClick={() => setActiveCategory(key)}
@@ -105,8 +104,8 @@ const Services = () => {
         {/* Active Service Category */}
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-              <div className="text-blue-600">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-4">
+              <div className="text-yellow-600">
                 {serviceCategories[activeCategory as keyof typeof serviceCategories].icon}
               </div>
             </div>
@@ -120,10 +119,10 @@ const Services = () => {
               <Link
                 key={index}
                 to={service.path}
-                className="bg-gray-50 rounded-lg p-6 hover:bg-blue-50 transition-colors group block"
+                className="bg-gray-50 rounded-lg p-6 hover:bg-yellow-50 transition-colors group block"
               >
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 group-hover:bg-blue-700"></div>
+                  <div className="w-2 h-2 bg-yellow-600 rounded-full mt-2 group-hover:bg-yellow-700"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900 group-hover:text-blue-700 transition-colors">
                       {service.label}

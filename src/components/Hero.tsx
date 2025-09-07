@@ -32,10 +32,10 @@ const Hero = () => {
                 View Our Services
               </a>
               <a
-                href="#services"
+                href="/contact"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors text-center"
               >
-                View Our Services
+                Contact Us
               </a>
             </div>
 

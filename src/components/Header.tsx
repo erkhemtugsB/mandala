@@ -19,8 +19,8 @@ const Header = () => {
       { label: 'Personal Property: Auto, Home, Condo, Renters', path: '/personal-property' },
       { label: 'Commercial: Trucking, Small Business (nail salon, construction, restaurants, etc.)', path: '/commercial' },
       { label: 'Bonds', path: '/bonds' },
-      { label: 'Event Insurance', path: '/event' },
-      { label: 'Life Insurance', path: '/life' },
+      { label: 'CT Quarterly Filings', path: '/ct-quarterly' },
+      { label: 'OR Quarterly Filings', path: '/or-quarterly' },
     ],
       'Real Estate Services': [
       { label: 'Buy a House', path: '/buy-a-house' },

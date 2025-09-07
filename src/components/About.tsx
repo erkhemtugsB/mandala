@@ -67,8 +67,6 @@ const About = () => {
           </div>
         </div>
 
-
-
         {/* <div className="mt-16 text-center">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h3>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
