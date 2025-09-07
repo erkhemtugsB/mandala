@@ -31,14 +31,21 @@ const OpenClose = () => {
           <li>Risk Management – Assess risks and create mitigation strategies for your business</li>
         </ul>
         <p className="mt-4 text-gray-700">
-          Schedule a consultation Monday through Friday, 9 am to 6 pm, or Saturday 10 am to 2 pm. 
-          Contact us by phone at <span className="font-semibold">(206)-555-0123</span> or email 
+          Schedule a consultation Monday through Friday, 9 am to 6 pm, or Saturday 10 am to 2 pm.
+          Contact us by phone at <span className="font-semibold">(206)-555-0123</span> or email
           <a href="mailto:info@businessconsult.com" className="text-blue-600 hover:underline">info@businessconsult.com</a>.
         </p>
         <p className="mt-2 text-gray-700">
           <span className="font-semibold">Address:</span> 123 Business Blvd, Suite 400, Seattle, WA 98101
         </p>
       </div>
+      <br></br>
+      <a
+        href="/contact"
+        className="bg-yellow-500 text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-center"
+      >
+        Contact Us
+      </a>
     </div>
   );
 };

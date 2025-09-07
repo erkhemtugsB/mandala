@@ -32,13 +32,20 @@ const Annual = () => {
         </ul>
         <p className="mt-4 text-gray-700">
           You can visit our office Monday thru Friday, 9 am thru 5 pm, or Saturday 10 am thru 1 pm.
-          Documents can also be faxed to <span className="font-semibold">(206)-787-0100</span> or emailed to 
+          Documents can also be faxed to <span className="font-semibold">(206)-787-0100</span> or emailed to
           <a href="mailto:mandalacs2020@gmail.com" className="text-blue-600 hover:underline"> mandalacs2020@gmail.com</a>.
         </p>
         <p className="mt-2 text-gray-700">
           <span className="font-semibold">Address:</span> 58490 Mukilteo Speedway, Mukilteo, WA 98275, Suite 203
         </p>
       </div>
+      <br></br>
+      <a
+        href="/contact"
+        className="bg-yellow-500 text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-center"
+      >
+        Contact Us
+      </a>
     </div>
   );
 };

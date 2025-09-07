@@ -45,6 +45,13 @@ const TaxID = () => {
           <span className="font-semibold">Address:</span> 58490 Mukilteo Speedway, Mukilteo, WA 98275, Suite 203
         </p>
       </div>
+      <br></br>
+      <a
+        href="/contact"
+        className="bg-yellow-500 text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-center"
+      >
+        Contact Us
+      </a>
     </div>
   );
 };

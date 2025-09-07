@@ -45,6 +45,13 @@ const Power = () => {
           it can be withdrawn at any time, and it must always be freely given.
         </p>
       </div>
+      <br></br>
+      <a
+        href="/contact"
+        className="bg-yellow-500 text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-center"
+      >
+        Contact Us
+      </a>
     </div>
   );
 };
