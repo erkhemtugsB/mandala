@@ -19,8 +19,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'service_mwywc9p', // Service ID
-        'template_powps2n', // Template ID
+        'service_pbweyz7', // Service ID
+        'template_3uc6ogh', // Template ID
         {
           name: formData.name,
           email: formData.email,
@@ -28,7 +28,7 @@ const Contact = () => {
           service: formData.service,
           message: formData.message
         },
-        'KBizYpyKzPjpMN-VN' // User ID (public key)
+        'pnP6yQ0q1DzlSXS7L' // User ID (public key)
       );
       alert('Thank you for your message! We will contact you soon.');
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Form Submission</title>
+    <style>
+      body {
+        background: #f9fafb;
+        font-family: 'Inter', Arial, sans-serif;
+        color: #374151;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 2rem auto;
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        padding: 2rem;
+        border-top: 8px solid #facc15; /* yellow-400 */
+      }
+      h2 {
+        color: #facc15; /* yellow-400 */
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+      .info {
+        margin-bottom: 1.5rem;
+      }
+      .label {
+        font-weight: 600;
+        color: #facc15;
+        margin-bottom: 0.25rem;
+        display: block;
+      }
+      .value {
+        margin-bottom: 1rem;
+        color: #374151;
+      }
+      .footer {
+        margin-top: 2rem;
+        font-size: 0.95rem;
+        color: #64748b;
+        text-align: center;
+      }
+      .button {
+        display: inline-block;
+        background: #facc15;
+        color: #1e293b;
+        padding: 0.75rem 2rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        text-decoration: none;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>New Contact Form Submission</h2>
+      <div class="info">
+        <span class="label">Full Name:</span>
+        <div class="value">{{name}}</div>
+        <span class="label">Email Address:</span>
+        <div class="value">{{email}}</div>
+        <span class="label">Phone Number:</span>
+        <div class="value">{{phone}}</div>
+        <span class="label">Service Needed:</span>
+        <div class="value">{{service}}</div>
+        <span class="label">Message:</span>
+        <div class="value">{{message}}</div>
+      </div>
+      <a href="mailto:mandalacs2020@gmail.com" class="button">Reply to Sender</a>
+      <div class="footer">
+        Mandala Comprehensive Service<br>
+        8490 Mukilteo Speedway, Suite 203, Mukilteo, WA 98275<br>
+        (206) 787-0100
+      </div>
+    </div>
+  </body>
+</html>
