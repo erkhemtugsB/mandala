@@ -26,14 +26,8 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a
-                href="#consultation"
-                className="bg-yellow-500 text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-center"
-              >
-                View Our Services
-              </a>
-              <a
                 href="/contact"
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors text-center"
+                className="bg-yellow-500 text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-center"
               >
                 Contact Us
               </a>

@@ -78,7 +78,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Professional Services</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive trucking business solutions to keep your operations compliant and profitable
+            Comprehensive business solutions to keep your operations compliant and profitable
           </p>
         </div>
 
