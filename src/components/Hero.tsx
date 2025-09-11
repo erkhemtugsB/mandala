@@ -95,22 +95,39 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Service Category Tabs */}
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              {Object.entries(serviceCategories).map(([key, category]) => (
-                <button
-                  key={key}
-                  type="button"
-                  className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all ${activeCategory === key
-                      ? 'bg-yellow-500 text-white shadow-lg'
-                      : 'bg-white text-gray-700 hover:bg-blue-50 border border-gray-200'
-                    }`}
-                  onClick={() => setActiveCategory(key)}
+            {/* Service Category Tabs - Dropdown on mobile, buttons on desktop */}
+            <div className="mb-12">
+              {/* Mobile Dropdown */}
+              <div className="sm:hidden mb-6">
+                <select
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 bg-white"
+                  value={activeCategory}
+                  onChange={e => setActiveCategory(e.target.value)}
                 >
-                  {category.icon}
-                  <span className="hidden sm:inline">{category.title}</span>
-                </button>
-              ))}
+                  {Object.entries(serviceCategories).map(([key, category]) => (
+                    <option key={key} value={key}>
+                      {category.title}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              {/* Desktop Buttons */}
+              <div className="hidden sm:flex flex-wrap justify-center gap-4">
+                {Object.entries(serviceCategories).map(([key, category]) => (
+                  <button
+                    key={key}
+                    type="button"
+                    className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all ${activeCategory === key
+                        ? 'bg-yellow-500 text-white shadow-lg'
+                        : 'bg-white text-gray-700 hover:bg-blue-50 border border-gray-200'
+                      }`}
+                    onClick={() => setActiveCategory(key)}
+                  >
+                    {category.icon}
+                    <span className="hidden sm:inline">{category.title}</span>
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Active Service Category */}
