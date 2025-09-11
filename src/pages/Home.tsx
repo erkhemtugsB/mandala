@@ -7,7 +7,7 @@ import Partners from '../components/Partners';
 const Home = () => {
   return (
     <>
-      <Services />
+      {/* <Services /> */}
       <Hero />
       <Partners />
       {/* <About /> */}

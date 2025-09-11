@@ -1,7 +1,77 @@
-import React from 'react';
-import { Truck, Shield, CheckCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { FileText, Truck, Building, Calculator, GraduationCap, Settings, Shield, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
+  const [activeCategory, setActiveCategory] = useState('irp');
+
+  // Map each service to its route path
+  const serviceCategories = {
+    irp: {
+      title: 'Tax Services',
+      icon: <FileText className="w-8 h-8" />,
+      services: [
+        { label: 'Personal Tax (Form 1040)', path: '/personal-tax' },
+        { label: 'Business Tax (Forms 1065, 1120, 1120S, Schedule C)', path: '/business-tax' },
+        { label: 'Tax ID or ITIN Applications', path: '/tax-id' },
+        { label: 'Create 1099 and W-2 Forms', path: '/create-1099' },
+        { label: 'Tax Consultation Services', path: '/tax-consultation' },
+      ]
+    },
+    ifta: {
+      title: 'Insurance Services',
+      icon: <Calculator className="w-8 h-8" />,
+      services: [
+        { label: 'Personal Property: Auto, Home, Condo, Renters', path: '/personal-property' },
+        { label: 'Commercial: Trucking, Small Business (nail salon, construction, restaurants, etc.)', path: '/commercial' },
+        { label: 'Bonds', path: '/bonds' },
+        { label: 'CT Quarterly Filings', path: '/ct-quarterly' },
+        { label: 'OR Quarterly Filings', path: '/or-quarterly' }
+      ]
+    },
+    formation: {
+      title: 'Real Estate Services',
+      icon: <Building className="w-8 h-8" />,
+      services: [
+        { label: 'Buy a House', path: '/buy-a-house' },
+        { label: 'Sell a House', path: '/sell-a-house' },
+        { label: 'Rent a House', path: '/rent-a-house' },
+        { label: 'Consultation to prepare for loan approval', path: '/real-estate-consultation' }
+      ]
+    },
+    tax: {
+      title: 'Notary Services',
+      icon: <Calculator className="w-8 h-8" />,
+      services: [
+        { label: 'General notary services', path: '/general-notary' },
+        { label: 'Child travel consent forms', path: '/child-travel' },
+        { label: 'Power of Attorney forms', path: '/power-of-attorney' },
+        { label: 'Other documents as needed', path: '/other-documents' }
+      ]
+    },
+    training: {
+      title: 'Legal Document Preparation',
+      icon: <GraduationCap className="w-8 h-8" />,
+      services: [
+        { label: 'Immigration forms', path: '/immigration-forms' },
+        { label: 'Wills', path: '/wills' },
+        { label: 'Divorce paperwork', path: '/divorce' },
+        { label: 'Other legal document filing assistance', path: '/other' },
+        { label: 'Note: We do not provide legal consultation or legal advice.', path: '/' }
+      ]
+    },
+    misc: {
+      title: 'Business Consultation',
+      icon: <Settings className="w-8 h-8" />,
+      services: [
+        { label: 'Open/close businesses (LLC, Inc., Nonprofit)', path: '/open-close-businesses' },
+        { label: 'Annual or quarterly reports filing', path: '/annual-reports' },
+        { label: 'Labor & Industries (workers’ comp) filings', path: '/labor' },
+        { label: 'Secretary of State and Department of Revenue filings', path: '/secretary-of-state' }
+      ]
+    }
+  };
+
   return (
     <section
       id="home"
@@ -14,64 +84,69 @@ const Hero = () => {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              One stop, Many Solutions- Serving You With Care
-              <span className="text-yellow-400"> since 2019 </span>
-            </h1>
-            <p className="text-xl mb-8 text-blue-100 leading-relaxed">
-              Complete solutions made simple. Always with your satisfaction in mind             
-            </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <a
-                href="/contact"
-                className="bg-yellow-500 text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-center"
-              >
-                Contact Us
-              </a>
+        {/* Services Section Below Hero */}
+        <section id="services" className="py-20 bg-transparent text-gray-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-4 text-white">Our Professional Services</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto text-white">
+                Comprehensive business solutions to keep your operations compliant and profitable
+              </p>
             </div>
 
-            {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-6 h-6 text-yellow-400 flex-shrink-0" />
-                <span className="text-sm">DOT Registration</span>
+            {/* Service Category Tabs */}
+            <div className="flex flex-wrap justify-center gap-4 mb-12">
+              {Object.entries(serviceCategories).map(([key, category]) => (
+                <button
+                  key={key}
+                  type="button"
+                  className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all ${activeCategory === key
+                      ? 'bg-yellow-500 text-white shadow-lg'
+                      : 'bg-white text-gray-700 hover:bg-blue-50 border border-gray-200'
+                    }`}
+                  onClick={() => setActiveCategory(key)}
+                >
+                  {category.icon}
+                  <span className="hidden sm:inline">{category.title}</span>
+                </button>
+              ))}
+            </div>
+
+            {/* Active Service Category */}
+            <div className="bg-white/30 backdrop-blur-md rounded-2xl shadow-xl p-8">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-4">
+                  <div className="text-yellow-600">
+                    {serviceCategories[activeCategory as keyof typeof serviceCategories].icon}
+                  </div>
+                </div>
+                <h3 className="text-3xl font-bold mb-2">
+                  {serviceCategories[activeCategory as keyof typeof serviceCategories].title}
+                </h3>
               </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-6 h-6 text-yellow-400 flex-shrink-0" />
-                <span className="text-sm">IFTA Filing</span>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {serviceCategories[activeCategory as keyof typeof serviceCategories].services.map((service, index) => (
+                  <Link
+                    key={index}
+                    to={service.path}
+                    className="bg-gray-50 rounded-lg p-6 hover:bg-yellow-50 transition-colors group block"
+                  >
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-yellow-600 rounded-full mt-2 group-hover:bg-yellow-700"></div>
+                      <div>
+                        <h4 className="font-semibold group-hover:text-blue-700 transition-colors">
+                          {service.label}
+                        </h4>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
               </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-6 h-6 text-yellow-400 flex-shrink-0" />
-                <span className="text-sm">IRP Registration</span>
-              </div>
-            </div> */}
+            </div>
           </div>
-
-          {/* <div className="relative">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="text-center mb-6">
-                <Truck className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">One-Stop Solution</h3>
-                <p className="text-blue-100">Complete trucking business services under one roof</p>
-              </div>
-              
-              <div className="grid grid-cols-2 gap-4 text-center">
-                <div className="bg-white/10 rounded-lg p-4">
-                  <Shield className="w-8 h-8 text-yellow-400 mx-auto mb-2" />
-                  <div className="text-2xl font-bold">7+</div>
-                  <div className="text-sm text-blue-100">Years Experience</div>
-                </div>
-                <div className="bg-white/10 rounded-lg p-4">
-                  <CheckCircle className="w-8 h-8 text-yellow-400 mx-auto mb-2" />
-                  <div className="text-2xl font-bold">100%</div>
-                  <div className="text-sm text-blue-100">Client Satisfaction</div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-        </div>
+        </section>
       </div>
     </section>
   );
