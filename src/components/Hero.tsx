@@ -142,6 +142,7 @@ const Hero = () => {
                   {serviceCategories[activeCategory as keyof typeof serviceCategories].title}
                 </h3>
               </div>
+              
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {serviceCategories[activeCategory as keyof typeof serviceCategories].services.map((service, index) => (
@@ -161,7 +162,19 @@ const Hero = () => {
                   </Link>
                 ))}
               </div>
+
+              
             </div>
+          </div>
+          {/* Small section at the end of services */}
+          <div className="mt-16 text-center bg-white/40 backdrop-blur-sm rounded-xl p-8 inline-block">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+              One stop, Many Solutions- Serving You With Care
+              <span className="text-yellow-400"> since 2019 </span>
+            </h1>
+            <p className="text-xl mb-8 text-blue-100 leading-relaxed">
+              Complete solutions made simple. Always with your satisfaction in mind
+            </p>
           </div>
         </section>
       </div>
