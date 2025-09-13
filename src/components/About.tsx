@@ -10,6 +10,11 @@ const About = () => {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Your trusted partner for providing comprehensive solutions and verified guidance for all your service and information needs.
           </p>
+          <div className="mt-4 text-lg text-gray-700 font-semibold">
+            <span className="inline-block bg-white/60 rounded px-4 py-2 shadow">
+              <span className="text-yellow-600">Schedule:</span> 9:00am-5:00pm Mon-Fri only. Sat (appt only)
+            </span>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
