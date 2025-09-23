@@ -32,7 +32,7 @@ const Labor = () => {
         </ul>
         <p className="mt-4 text-gray-700">
           You can bring your documents to our office Monday thru Friday, 9 am thru 5 pm, or Saturday 10 am thru 1 pm,
-          fax them at <span className="font-semibold">(206)-787-0100</span>,
+          fax them at <span className="font-semibold">(425) 480-5448 or (206)-787-0100</span>,
           or email them to <a href="mailto:mandalacs2020@gmail.com" className="text-blue-600 hover:underline">mandalacs2020@gmail.com</a>.
         </p>
         <p className="mt-2 text-gray-700">

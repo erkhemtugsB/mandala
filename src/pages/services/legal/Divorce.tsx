@@ -32,7 +32,7 @@ const Divorce = () => {
         </ul>
         <p className="mt-4 text-gray-700">
           You can visit our office Monday thru Friday, 9 am thru 5 pm, or Saturday 10 am thru 1 pm,  
-          call us at <span className="font-semibold">(206)-555-1234</span>,  
+          call us at <span className="font-semibold">(425) 480-5448 or (206)-555-1234</span>,  
           or email <a href="mailto:info@familylawservices.com" className="text-blue-600 hover:underline">info@familylawservices.com</a>.
         </p>
         <p className="mt-2 text-gray-700">

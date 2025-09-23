@@ -40,7 +40,7 @@ const Sell = () => {
         {/* Contact Info */}
         <p className="mt-4 text-gray-700">
           Ready to sell your home? Reach out to us today. 
-          You can call us at <span className="font-semibold">(206)-787-0100</span>, 
+          You can call us at <span className="font-semibold">(425) 480-5448 or (206)-787-0100</span>, 
           or email at <a href="mailto:mandalacs2020@gmail.com" className="text-blue-600 hover:underline">mandalacs2020@gmail.com</a>.
         </p>
         <p className="mt-2 text-gray-700">

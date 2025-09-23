@@ -52,7 +52,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to get started? Contact us today for professional trucking consulting services.
+            Ready to get started? Contact us today for professional consulting services.
           </p>
         </div>
 
@@ -69,6 +69,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone Numbers</h4>
                   <p className="text-gray-600">(206) 787-0100</p>
+                  <p className="text-gray-600">(425) 480-5448</p>
                 </div>
               </div>
 
@@ -103,8 +104,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Business Hours</h4>
                   <p className="text-gray-600">
-                    Monday - Friday: 8:00 AM - 6:00 PM<br />
-                    Saturday: 9:00 AM - 4:00 PM<br />
+                    Monday - Friday: 9:00 AM - 5:00 PM<br />
+                    Saturday: Appointment only<br />
                     Sunday: Closed
                   </p>
                 </div>

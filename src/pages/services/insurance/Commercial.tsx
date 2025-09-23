@@ -36,7 +36,7 @@ const Commercial = () => {
         <p className="mt-4 text-gray-700">
           Contact us today to review your coverage needs and get a personalized quote. We’re available 
           Monday thru Friday, 9 am to 5 pm, and Saturday 10 am to 1 pm. 
-          You can also reach us by phone at <span className="font-semibold">(206)-787-0100</span>, 
+          You can also reach us by phone at <span className="font-semibold">(425) 480-5448 or (206)-787-0100</span>, 
           or email us at <a href="mailto:mandalacs2020@gmail.com" className="text-blue-600 hover:underline">mandalacs2020@gmail.com</a>.
         </p>
         <p className="mt-2 text-gray-700">

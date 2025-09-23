@@ -33,7 +33,7 @@ const Event = () => {
         </ul>
         <p className="mt-4 text-gray-700">
           To learn more about coverage options or request a quote, you can visit our office Monday thru Friday, 9 am – 5 pm,
-          and Saturday 10 am – 1 pm, call us at <span className="font-semibold">(206)-787-0100</span>,
+          and Saturday 10 am – 1 pm, call us at <span className="font-semibold">(425) 480-5448 or (206)-787-0100</span>,
           or email us at <a href="mailto:mandalacs2020@gmail.com" className="text-blue-600 hover:underline">mandalacs2020@gmail.com</a>.
         </p>
         <p className="mt-2 text-gray-700">
