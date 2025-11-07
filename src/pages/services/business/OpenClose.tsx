@@ -32,7 +32,7 @@ const OpenClose = () => {
         </ul>
         <p className="mt-4 text-gray-700">
           Schedule a consultation Monday through Friday, 9 am to 6 pm, or Saturday 10 am to 2 pm.
-          Contact us by phone at <span className="font-semibold">(425) 480-5448 or (206)-555-0123</span> or email
+          Contact us by phone at <span className="font-semibold">(425) 480-4548 or (206)-555-0123</span> or email
           <a href="mailto:info@businessconsult.com" className="text-blue-600 hover:underline">info@businessconsult.com</a>.
         </p>
         <p className="mt-2 text-gray-700">

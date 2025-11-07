@@ -32,7 +32,7 @@ const Secretary = () => {
         </ul>
         <p className="mt-4 text-gray-700">
           You can reach us Monday through Friday from 9 am to 5 pm, or Saturday from 10 am to 1 pm. 
-          Call us at <span className="font-semibold">(425) 480-5448 or (206)-787-0100</span>, 
+          Call us at <span className="font-semibold">(425) 480-4548 or (206)-787-0100</span>, 
           or email <a href="mailto:mandalacs2020@gmail.com" className="text-blue-600 hover:underline">mandalacs2020@gmail.com</a> for appointments or inquiries.
         </p>
         <p className="mt-2 text-gray-700">

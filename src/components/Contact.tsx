@@ -69,7 +69,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone Numbers</h4>
                   <p className="text-gray-600">(206) 787-0100</p>
-                  <p className="text-gray-600">(425) 480-5448</p>
+                  <p className="text-gray-600">(425) 480-4548</p>
                 </div>
               </div>
 

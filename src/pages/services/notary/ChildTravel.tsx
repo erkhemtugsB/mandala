@@ -40,7 +40,7 @@ const ChildTravel = () => {
         </ul>
         <p className="mt-4 text-gray-700">
           You can fill out the form in our office Monday thru Friday, 9 am – 5 pm, and Saturday 10 am – 1 pm,
-          fax your documents to <span className="font-semibold">(425) 480-5448 or (206)-787-0100</span>,
+          fax your documents to <span className="font-semibold">(425) 480-4548 or (206)-787-0100</span>,
           or email us at <a href="mailto:mandalacs2020@gmail.com" className="text-blue-600 hover:underline">mandalacs2020@gmail.com</a>.
         </p>
         <p className="mt-2 text-gray-700">
